@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;   
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background-color: rgb(250, 235, 215);
+}
+
+.profile-container {
+    background-color: whitesmoke;
+    border: rgba(250, 250, 250, 0.445) 5px solid;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin: 6% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative; /* Position relative for absolute positioning of button */
+}
+
+.edit-btn {
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Distance from the top of the container */
+    right: 20px; /* Distance from the right of the container */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size of the button text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    background-color: #007bff; /* Primary color */
+    display: inline-block; /* Ensure proper spacing */
+    text-align: center; /* Center the text */
+}
+
+.edit-btn:hover {
+    background-color: #afb7be; /* Darker color on hover */
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: #0057b3 solid 5px;
+    margin-right: 20px; /* Space between image and username */
+}
+
+.profile-header .username {
+    font-size: 24px; /* Larger font size for the username */
+    word-wrap: break-word; /* Allow long words to break and wrap */
+    word-break: break-word; /* Ensure long words are wrapped correctly */
+    max-width: 100%; /* Make sure the username doesn't exceed the container's width */
+    line-height: 1.2; /* Adjust line height for better readability */
+}
+
+
+.bio-div {
+    max-width: 100%;
+    text-align: center;
+}
+
+span {
+    display: inline-block; /* Ensure proper spacing */
+    margin-top: 10px; /* Adjust margin */
+    border: 2px rgb(78, 132, 194) solid;
+    border-radius: 6px;
+    padding: 5px 10px; /* Add padding for better appearance */
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+li, a{
+    color: white;
+}
+
+/* Media Query for Tablets and Small Screens */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 95%; /* Increase width for small screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .profile-header {
+        flex-direction: column; /* Stack image and username vertically */
+        align-items: center;
+    }
+
+    .profile-header img {
+        max-width: 80px; /* Reduce image size */
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 10px; /* Space between image and username */
+    }
+
+    .profile-header .username {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .bio-div {
+        margin-top: 15px; /* Adjust margin */
+    }
+
+    span {
+        margin-top: 15px; /* Adjust margin */
+        padding: 4px 8px; /* Adjust padding */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .profile-container {
+        width: 100%; /* Full width on very small screens */
+        padding: 15px; /* Further reduce padding */
+    }
+
+    .profile-header {
+        flex-direction: column; /* Stack image and username vertically */
+        align-items: center;
+    }
+
+    .profile-header img {
+        max-width: 60px; /* Further reduce image size */
+        margin-bottom: 10px; /* Space between image and username */
+    }
+
+    .profile-header .username {
+        font-size: 18px; /* Further adjust font size */
+    }
+
+    .bio-div {
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    span {
+        margin-top: 10px; /* Adjust margin */
+        padding: 3px 6px; /* Adjust padding */
+    }
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}

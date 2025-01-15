@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;   
+}
+
+body {
+    background-color: rgb(250, 235, 215);
+}
+
+/* Profile Container Styling */
+.profile-container {
+    background-color: whitesmoke;
+    border: rgba(250, 250, 250, 0.445) 5px solid;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 5% auto;
+    padding: 40px;
+    width: 85%;
+    max-width: 700px; /* Increased max width */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative; /* Position relative for absolute positioning of button */
+}
+
+/* Edit Button Styling */
+.edit-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 15px 30px; /* Increased padding */
+    font-size: 18px; /* Increased font size */
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    display: inline-block;
+    text-align: center;
+}
+
+.edit-btn:hover {
+    background-color: #afb7be;
+}
+
+/* Profile Header Styling */
+.profile-header {
+    display: flex;
+    flex-direction: column; /* Set column layout to center image */
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.profile-header img {
+    width: 130px; /* Larger image size */
+    height: 130px; /* Larger image size */
+    border-radius: 50%;
+    border: #0057b3 solid 5px;
+    margin-bottom: 20px; /* Add margin to separate image from text */
+}
+
+/* Bio Section */
+.bio-div {
+    max-width: 100%;
+    text-align: center;
+}
+
+.badge-text, span {
+    display: inline-block;
+    margin-top: 15px; /* Adjusted margin */
+    border: 2px rgb(78, 132, 194) solid;
+    border-radius: 8px; /* Increased radius */
+    padding: 8px 15px; /* Increased padding */
+    margin-left: 15px;
+    margin-bottom: 50px;
+    font-size: 18px; /* Larger badge font */
+}
+
+/* User Posts Section */
+#posts-container {
+    margin-top: 50px;
+}
+
+#posts-container h3 {
+    font-size: 28px; /* Increased heading size */
+}
+
+.post.card {
+    padding: 20px;
+}
+
+.post.card .card-title {
+    font-size: 24px; /* Larger post title */
+}
+
+.post.card .card-text {
+    font-size: 18px; /* Larger post text */
+}
+
+/* Media Query for Tablets and Small Screens */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-header img {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .bio-div {
+        margin-top: 20px;
+    }
+
+    .badge-text, span {
+        padding: 6px 12px;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .profile-container {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .profile-header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-header .username {
+        font-size: 24px;
+    }
+
+    .bio-div {
+        margin-top: 15px;
+    }
+
+    .badge-text, span {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+}

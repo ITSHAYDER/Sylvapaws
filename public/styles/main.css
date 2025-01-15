@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300..800&family=Montserrat:ital,wght@0,503;1,503&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f6f0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: #333;
+    padding: 1.5% 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.search-and-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust as needed */
+}
+
+.search-box {
+    background-color: rgb(255, 255, 255);
+    width: 100%; 
+    max-width: 250px; 
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-box input {
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    background-color:#333;
+    border: none;
+    color: white;
+}
+.dropdown-item{
+    color: white;
+
+}
+
+.posts {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.post {
+    margin-top: 20px;
+    border: 2px solid rgba(200, 200, 200, 0.3); /* Softer border */
+    border-radius: 15px;
+    width: 320px;
+    max-height: 450px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer and larger shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* More dramatic shadow on hover */
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the full width without distorting */
+    border-bottom: 2px solid rgba(200, 200, 200, 0.3);
+}
+
+.name {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #3b3b5c;
+    font-weight: 700;
+}
+
+.description {
+    margin: 15px 20px;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: #3b3b5c;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-floating:hover {
+    background-color: #2a2a49;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.btn-floating i {
+    font-size: 1.5rem;
+}
+.profile-link {
+    display: none; /* Hide by default */
+}
+
+.profile-image-small {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@media (max-width: 767.98px) {
+    /* Show the profile link with image for mobile */
+    .profile-link {
+        display: flex !important;
+    }
+
+    .profile {
+        display: none; /* Hide larger profile image on mobile */
+    }
+
+    /* Ensure search and filter take full width */
+    .search-and-filter {
+        flex-direction: column; /* Stack vertically */
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Adjust search box for mobile */
+    .search-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust dropdown for mobile */
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Dropdown button styling */
+    .dropdown-toggle {
+        width: 100%;
+    }
+    .navbar{
+        padding: 20px;
+    }
+}
