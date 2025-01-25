@@ -50,7 +50,7 @@ Sylvapaws is a platform dedicated to rescuing and finding loving homes for anima
 2. **Create Virtual Environment**
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows use 
+   venv\Scripts\activate  # On Windows use 
    venv\Scripts\activate
    ```
 3. **Install dependencies:** 
