@@ -17,18 +17,18 @@ Sylvapaws is a platform dedicated to rescuing and finding loving homes for anima
 
 ## **Screenshots**  
 ## **Landing Page**  
-[Watch Landing Page Video](readme/landing.gif)  
+![Watch Landing Page Video](readme/landing.gif)  
 *The welcoming homepage featuring a hero section and clear call-to-actions.*  
 ## **main Page**  
-[Watch main page Video](readme/adoption.gif)  
+![Watch main page Video](readme/adoption.gif)  
 *Here, you can post about animals in need and connect with those who can help.*
 
 ## **Post a Pet**  
-[Watch Post a Pet Video](readme/post.gif)  
+![Watch Post a Pet Video](readme/post.gif)  
 *Explore profiles of animals looking for loving homes.*  
 
 ## **Profile**  
-[Watch Profile Video](readme/profile.gif)  
+![Watch Profile Video](readme/profile.gif)  
 *Every user has their profile.*
 
 
